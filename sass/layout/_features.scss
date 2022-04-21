@@ -1,0 +1,35 @@
+.features__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text-title);
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.features {
+    display: flex;
+    margin-left: -30px;
+}
+
+.features__item {
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+}
+
+.features__thumb {
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}

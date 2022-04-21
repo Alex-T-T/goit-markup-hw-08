@@ -1,0 +1,51 @@
+.mailing-list {
+    background-color: transparent;
+    margin-left: 93px;
+    flex-grow: 1;
+}
+
+.mailing-list__wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.mailing-list__label {
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--font-family-main);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-logo-dark-bgd);
+}
+
+.mailing-list__input {
+    flex-grow: 1;
+    padding: 15px 16px;
+    margin-right: 12px;
+    color: var(--color-logo-dark-bgd);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        font-family: var(--font-family-main);
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &:focus {
+        outline: none;
+        border-color: var(--color-logo);
+    }
+}
+
+
+
