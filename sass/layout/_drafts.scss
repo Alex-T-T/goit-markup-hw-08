@@ -31,7 +31,9 @@
 }
 
 .drafts__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -85,16 +87,14 @@
         margin-top: 30px;
         flex-basis: calc((100% - 2 * 30px) / 2);
     }
-    .drafts__box--paddingbottom {
-        padding-bottom: 56px;
+
+    .drafts__box {
+        flex-grow: 1;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .drafts__item {
         flex-basis: calc((100% - 3 * 30px) / 3);
-    }
-    .drafts__box--paddingbottom {
-        padding-bottom: 20px;
     }
 }

@@ -8,7 +8,7 @@
     font-family: var(--font-family-main);
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-text-title);
@@ -78,8 +78,8 @@
     align-items: center;
     margin-bottom: 30px;
     font-family: var(--font-family-main);
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--color-text-main);
 }
@@ -114,7 +114,16 @@
     }
 }
 
-
 .user-license__link {
     color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+    .user-data__title {
+        line-height: 1.15;
+    }
+    .user-license__label{
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
