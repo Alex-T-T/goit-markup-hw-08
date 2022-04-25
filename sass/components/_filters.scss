@@ -1,3 +1,10 @@
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
 .filters__btn {
     padding: 6px 22px;
     font-family: var(--font-family-main);
@@ -23,20 +30,31 @@
     }
 }
 
-
-
-.filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
 .filters__item {
     margin-right: 8px;
+    margin-bottom: 15px;
     
     &:last-child {
         margin-right: 0px;
     }
+    &:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
 }
 
+    @media screen and (min-width: 768px) {
+        .filters {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+        }
+        .filters__item {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .filters {
+            margin-bottom: 50px;
+        }
+    }
