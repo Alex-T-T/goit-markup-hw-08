@@ -14,14 +14,13 @@
     letter-spacing: 0.03em;
 }
 
-.drafts {
-    display: flex;
-    flex-direction: column;
-}
-
 .drafts__item {
     box-sizing: border-box;
     margin-bottom: 30px;
+}
+
+.drafts__item:last-child {
+    margin-bottom: 0px;
 }
 
 .drafts__box {
@@ -75,6 +74,7 @@
 
 @media screen and (min-width: 768px) {
     .drafts {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin-left: -30px;

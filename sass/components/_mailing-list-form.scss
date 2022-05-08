@@ -26,7 +26,7 @@
 .mailing-list__input {
     margin-bottom: 20px;
     padding: 15px 16px;
-    width: 100%;
+    width: 450px;
     color: var(--color-logo-dark-bgd);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -52,6 +52,7 @@
         flex-direction: row;
     }
     .mailing-list__input {
+        width: 100%;
         flex-grow: 1;
         margin-bottom: 0;
         margin-right: 12px;
